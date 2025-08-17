@@ -4,64 +4,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Currículo — Matheus Siqueira</title>
+
+  <!-- Meta básico -->
+  <meta name="description" content="Currículo de Matheus Siqueira — Desenvolvedor Full Stack & Analista de Dados." />
+  <meta name="author" content="Matheus Siqueira" />
+
   <style>
+    /* Tema claro/escuro */
     :root{
       --bg:#0f1115; --fg:#e5e7eb; --muted:#a1a1aa; --primary:#2dd4bf; --card:#111318; --ring:#1f2937;
     }
     @media (prefers-color-scheme: light){
       :root{ --bg:#fafafa; --fg:#0f172a; --muted:#64748b; --primary:#0f766e; --card:#ffffff; --ring:#e2e8f0; }
     }
-    *{box-sizing:border-box} html,body{margin:0;padding:0}
-    body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+
+    /* Base */
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      background:var(--bg); color:var(--fg);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+    }
     .container{max-width:980px;margin:40px auto;padding:0 20px}
-    header{margin-bottom:18px}
-    h1{font-size:2rem;margin:0 0 4px}
-    h2{font-size:1.35rem;margin:22px 0 10px;color:var(--primary)}
-    h3{font-size:1rem;margin:12px 0 6px;color:var(--fg)}
-    p{margin:8px 0}
     a{color:var(--primary);text-decoration:none}
     a:hover{text-decoration:underline}
-    .chips a{display:inline-block;margin:6px 10px 0 0;padding:6px 10px;border:1px solid var(--ring);border-radius:999px}
-    .card{background:var(--card);border:1px solid var(--ring);border-radius:16px;padding:18px;margin:18px 0}
+    h1{font-size:2rem;margin:0 0 4px}
+    h2{font-size:1.35rem;margin:22px 0 10px;color:var(--primary)}
+    h3{font-size:1rem;margin:12px 0 6px}
+    p{margin:8px 0}
     ul{margin:8px 0 0 0;padding-left:1.2rem}
     li{margin:6px 0}
+    .muted{color:var(--muted)}
+
+    /* Header com foto */
+    header.perfil{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .foto-perfil{
+      width:120px;height:120px;border-radius:50%;object-fit:cover;
+      border:3px solid var(--primary);flex-shrink:0
+    }
+    .chips a{
+      display:inline-block;margin:6px 10px 0 0;padding:6px 10px;
+      border:1px solid var(--ring);border-radius:999px
+    }
+
+    /* Cartões/seções */
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:16px;padding:18px;margin:18px 0}
+
+    /* Layout listas longas */
     .two-cols{columns:2;column-gap:32px}
     @media (max-width:760px){.two-cols{columns:1}}
+
+    /* Stack de skills */
     .stack .tag{display:inline-block;border:1px solid var(--ring);border-radius:999px;padding:2px 10px;margin:4px 6px 0 0;font-size:.9rem}
     footer{color:var(--muted);margin-top:16px}
   </style>
-  <meta name="description" content="Currículo de Matheus Siqueira — Desenvolvedor Full Stack & Analista de Dados.">
-  <meta name="author" content="Matheus Siqueira">
 </head>
 <body>
   <main class="container">
-    <header>
-      <h1>Matheus Siqueira</h1>
-      <p><strong>Desenvolvedor Full Stack & Analista de Dados</strong></p>
-      <div class="chips">
-        <a href="mailto:matheushstor@gmail.com">matheushstor@gmail.com</a>
-        <a href="https://www.linkedin.com/in/siqueira-hub/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/matheussiqueirahub" target="_blank" rel="noopener">GitHub</a>
+
+    <!-- CABEÇALHO -->
+    <header class="perfil">
+      <!-- sua foto deve estar em: assets/foto.jpeg -->
+      <img src="assets/foto.jpeg" alt="Foto de Matheus Siqueira" class="foto-perfil" />
+      <div>
+        <h1>Matheus Siqueira</h1>
+        <p><strong>Desenvolvedor Full Stack & Analista de Dados</strong></p>
+        <div class="chips">
+          <a href="mailto:matheushstor@gmail.com">matheushstor@gmail.com</a>
+          <a href="https://www.linkedin.com/in/siqueira-hub/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/matheussiqueirahub" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </header>
 
+    <!-- RESUMO -->
     <section class="card">
       <h2>Resumo</h2>
       <p>Profissional focado em Desenvolvimento Full Stack e Dados, com experiência em ETL, Python, JavaScript, SQL, DAX, Power BI, versionamento com Git/GitHub e práticas ágeis (Scrum). Na Secretaria da Fazenda, construo pipelines de dados, dashboards e automações. Em formação em ADS e cursando pós-graduações em IA, Segurança da Informação e Cloud & Edge Computing.</p>
     </section>
 
+    <!-- EXPERIÊNCIA -->
     <section class="card">
       <h2>Experiência</h2>
       <h3>Analista de Dados — Secretaria da Fazenda (Fev/2025 – Atual)</h3>
       <ul>
-        <li>Pipelines <strong>ETL</strong> (Python/SQL/Power Query) e automação de relatórios.</li>
-        <li>Modelagem e dashboards em <strong>Power BI</strong> com <strong>DAX</strong>.</li>
+        <li>Desenvolvimento de <strong>pipelines ETL</strong> (Python/SQL/Power Query) e automação de relatórios.</li>
+        <li>Modelagem e criação de <strong>dashboards Power BI</strong> com <strong>DAX</strong>.</li>
         <li>Detecção de anomalias e análises estatísticas para apoio à decisão.</li>
         <li>Fluxos <strong>Scrum</strong> e versionamento com <strong>Git/GitHub</strong>.</li>
       </ul>
-      <p style="color:var(--muted)">Experiências anteriores em marketing foram condensadas, destacando habilidades transferíveis: automação, análise de métricas, SEO técnico e gestão de projetos.</p>
+      <p class="muted">Experiências anteriores em marketing foram condensadas, priorizando habilidades transferíveis: automação, análise de métricas, SEO técnico e gestão de projetos.</p>
     </section>
 
+    <!-- FORMAÇÃO -->
     <section class="card">
       <h2>Formação Acadêmica</h2>
       <ul>
@@ -73,6 +108,7 @@
       </ul>
     </section>
 
+    <!-- LICENÇAS & CERTIFICADOS -->
     <section class="card">
       <h2>Licenças & Certificados</h2>
 
@@ -102,6 +138,7 @@
       </ul>
     </section>
 
+    <!-- COMPETÊNCIAS -->
     <section class="card">
       <h2>Competências Técnicas</h2>
       <div class="stack">

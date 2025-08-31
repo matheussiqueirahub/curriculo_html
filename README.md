@@ -1,38 +1,35 @@
 # Currículo HTML — Matheus Siqueira
 
-Currículo simples em HTML/CSS com tema claro/escuro automático e layout responsivo. Mantém as informações atuais do perfil, com foco em Full Stack e Dados.
+## Visão Geral
+- Página de currículo estática em HTML/CSS, responsiva e leve.
+- Suporte automático a tema claro/escuro via `prefers-color-scheme`.
+- Estruturada com foco em legibilidade, semântica e manutenção.
 
-## Como visualizar
-
+## Visualização
 Abra `index.html` no navegador.
 
-- Windows (PowerShell): `start index.html`
+- Windows: `start index.html`
 - macOS: `open index.html`
-- Linux (GNOME): `xdg-open index.html`
+- Linux: `xdg-open index.html`
 
 ## Estrutura
-
 ```
 .
-├─ index.html   # Página do currículo (estilos embutidos)
-└─ assets/
-   ├─ perfil.jpg  # Foto usada no cabeçalho
-   └─ foto.jpeg/  # Pasta com outras fotos originais (backup)
+- index.html           (página do currículo; estilos embutidos)
+- assets/
+  - perfil.jpg         (foto exibida no cabeçalho)
+  - foto.jpeg/         (outras fotos mantidas como backup)
 ```
 
-## Ajustes feitos
+## Detalhes Técnicos
+- Codificação em UTF‑8 para acentuação correta.
+- Acessibilidade: `alt` em imagens; `rel="noopener noreferrer"` em links externos.
+- Performance: imagens com `loading="lazy"` e `decoding="async"`.
 
-- Corrigido caminho da foto (agora em `assets/perfil.jpg`).
-- Acentuação/encoding padronizados em UTF-8.
-- Pequenos aprimoramentos de acessibilidade (alt, `rel="noopener noreferrer"`) e performance (`loading=lazy`).
-
-## Personalização rápida
-
-- Trocar a foto: substitua `assets/perfil.jpg` por outra imagem.
-- Editar conteúdo: altere os textos diretamente em `index.html`.
-- Cores: ajuste os tokens no `:root` (variáveis CSS).
+## Personalização
+- Foto: substitua `assets/perfil.jpg`.
+- Conteúdo: edite os textos em `index.html`.
+- Cores: ajuste as variáveis CSS no seletor `:root`.
 
 ## Licença
-
 MIT
-

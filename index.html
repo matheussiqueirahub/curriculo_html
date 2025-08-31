@@ -36,7 +36,7 @@
     li{margin:6px 0}
     .muted{color:var(--muted)}
 
-    /* Header com foto */
+    /* Cabeçalho (foto) */
     header.perfil{display:flex;align-items:center;gap:16px;margin-bottom:18px}
     .foto-perfil{
       width:120px;height:120px;border-radius:50%;object-fit:cover;
@@ -50,11 +50,11 @@
     /* Cartões/seções */
     .card{background:var(--card);border:1px solid var(--ring);border-radius:16px;padding:18px;margin:18px 0}
 
-    /* Layout listas longas */
+    /* Listas longas */
     .two-cols{columns:2;column-gap:32px}
     @media (max-width:760px){.two-cols{columns:1}}
 
-    /* Stack de skills */
+    /* Habilidades (tags) */
     .stack .tag{display:inline-block;border:1px solid var(--ring);border-radius:999px;padding:2px 10px;margin:4px 6px 0 0;font-size:.9rem}
     footer{color:var(--muted);margin-top:16px}
   </style>
@@ -62,9 +62,8 @@
 <body>
   <main class="container">
 
-    <!-- CABEÇALHO -->
+    <!-- Cabeçalho -->
     <header class="perfil">
-      <!-- foto do perfil em assets/perfil.jpg -->
       <img src="assets/perfil.jpg" alt="Foto de Matheus Siqueira" class="foto-perfil" width="120" height="120" loading="lazy" decoding="async" />
       <div>
         <h1>Matheus Siqueira</h1>
@@ -77,13 +76,13 @@
       </div>
     </header>
 
-    <!-- RESUMO -->
+    <!-- Resumo -->
     <section class="card">
       <h2>Resumo</h2>
       <p>Profissional focado em Desenvolvimento Full Stack e Dados, com experiência em ETL, Python, JavaScript, SQL, DAX, Power BI, versionamento com Git/GitHub e práticas ágeis (Scrum). Na Secretaria da Fazenda, construo pipelines de dados, dashboards e automações. Em formação em ADS e cursando pós-graduações em IA, Segurança da Informação e Cloud & Edge Computing.</p>
     </section>
 
-    <!-- EXPERIÊNCIA -->
+    <!-- Experiência -->
     <section class="card">
       <h2>Experiência</h2>
       <h3>Analista de Dados - Secretaria da Fazenda (Fev/2025 - Atual)</h3>
@@ -96,7 +95,7 @@
       <p class="muted">Experiências anteriores em marketing foram condensadas, priorizando habilidades transferíveis: automação, análise de métricas, SEO técnico e gestão de projetos.</p>
     </section>
 
-    <!-- FORMAÇÃO -->
+    <!-- Formação -->
     <section class="card">
       <h2>Formação Acadêmica</h2>
       <ul>
@@ -108,7 +107,7 @@
       </ul>
     </section>
 
-    <!-- LICENÇAS & CERTIFICADOS -->
+    <!-- Licenças & Certificados -->
     <section class="card">
       <h2>Licenças & Certificados</h2>
 
@@ -138,7 +137,7 @@
       </ul>
     </section>
 
-    <!-- COMPETÊNCIAS -->
+    <!-- Competências -->
     <section class="card">
       <h2>Competências Técnicas</h2>
       <div class="stack">
@@ -162,3 +161,4 @@
   </main>
 </body>
 </html>
+

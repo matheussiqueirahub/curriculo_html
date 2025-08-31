@@ -32,10 +32,7 @@ Abra `index.html` no navegador.
 - Editar conteúdo: altere os textos diretamente em `index.html`.
 - Cores: ajuste os tokens no `:root` (variáveis CSS).
 
-## Publicação
-
-Pode ser publicado no GitHub Pages (Settings → Pages → Source: `main` / root).
-
 ## Licença
 
 MIT
+
